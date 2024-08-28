@@ -18,14 +18,15 @@ object Main {
 
     val wordcount = words.map(w => (w.toLowerCase(),1))
 
-//    val res = wordcount.reduceByKey(_ + _).map(x => (x._2, x._1)).sortByKey()
-//
-//    res.collect().foreach(println)
+    val res = wordcount.reduceByKey(_ + _).map(x => (x._2, x._1)).sortByKey()
+
+    res.collect().foreach(println)
 
     //    count by key
-    val res1 = wordcount.countByKey()
-
-    res1.foreach(println)
+//    val res1 = wordcount.countByKey()
+//
+//    res1.foreach(println)
+    sc.stop()
 
   }
 }
