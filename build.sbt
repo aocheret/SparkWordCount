@@ -1,6 +1,6 @@
 ThisBuild / version := "0.1.0-SNAPSHOT"
 
-ThisBuild / scalaVersion := "2.11.12"
+ThisBuild / scalaVersion := "2.11.0"
 
 // https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-client
 libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "2.7.1"
