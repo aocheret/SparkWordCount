@@ -12,7 +12,7 @@ object Main {
 
     println("Hello world!")
 
-    //Logger.getLogger("org").setLevel(Level.ERROR)
+    Logger.getLogger("org").setLevel(Level.ERROR)
     println("Hello world!2")
     val scf = new SparkConf()
     scf.setAppName("Demo")
