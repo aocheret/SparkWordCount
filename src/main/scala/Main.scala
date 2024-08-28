@@ -6,7 +6,7 @@ object Main {
   def main(args: Array[String]): Unit = {
     println("Hello world!")
 
-    Logger.getLogger("org").setLevel(Level.ERROR)
+    //Logger.getLogger("org").setLevel(Level.ERROR)
     println("Hello world!")
     val scf = new SparkConf()
     scf.setAppName("Demo")
