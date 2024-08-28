@@ -7,12 +7,12 @@ object Main {
     println("Hello world!")
 
     Logger.getLogger("org").setLevel(Level.ERROR)
-
+    println("Hello world!")
     val scf = new SparkConf()
     scf.setAppName("Demo")
-
+    println("Hello world!")
     val sc = new SparkContext(scf)
-
+    println("Hello world!")
     val rdd1= sc.textFile(args(0))
     val words = rdd1.flatMap(line => line.split(" "))
 
